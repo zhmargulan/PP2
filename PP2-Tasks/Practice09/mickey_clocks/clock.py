@@ -14,7 +14,7 @@ class MickeyClock:
         self.bg = pygame.transform.scale(self.bg, self.screen_size)
         
         self.mickey_body = pygame.image.load(os.path.join(img_dir, "mikkey.png")).convert_alpha()
-        self.mickey_body = pygame.transform.scale(self.mickey_body, (380, 390)) 
+        self.mickey_body = pygame.transform.scale(self.mickey_body, (800, 700)) 
         self.mickey_rect = self.mickey_body.get_rect(center=self.center)
         
         # You no longer need to force these into squares if using the pivot function below.

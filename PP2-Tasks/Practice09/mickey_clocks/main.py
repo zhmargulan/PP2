@@ -6,7 +6,7 @@ def main():
     pygame.init()
     
     # Square window to match the clock face
-    WIDTH, HEIGHT = 800, 800
+    WIDTH, HEIGHT = 1536, 1024
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("Mickey Mouse Clock")
     

@@ -96,6 +96,11 @@ def main():
                 elif event.key == pygame.K_RIGHT:
                     ball.move("right")
 
+        klava = pygame.key.get_pressed()
+        
+        if klava[pygame.K_w]:
+            ball.move("up")
+        
         # ── Drawing ──────────────────────────────────────────────────────
         screen.fill(COLOR_BG)
         draw_grid(screen)
