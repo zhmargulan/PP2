@@ -155,8 +155,7 @@ class Coin:
 
     def rect(self):
         return pygame.Rect(self.x - self.R, self.y - self.R, self.R*2, self.R*2)
-
-
+    
 # ── Overlay helpers ───────────────────────────────────────────────────────────
 def draw_hud(surface, score: int, coins: int):
     """Draw score (top-left) and coin count (top-right)."""
