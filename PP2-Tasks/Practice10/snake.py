@@ -70,6 +70,7 @@ class Snake:
     def __init__(self):
         # Start in the middle of the grid, 3 cells long, moving right
         cx, cy = COLS // 2, ROWS // 2
+        self.head = pygame.image.load()
         self.body      = [(cx, cy), (cx-1, cy), (cx-2, cy)]
         self.direction = RIGHT
         self._queued   = RIGHT    # direction queued from keyboard input
